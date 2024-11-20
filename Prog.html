@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InovaSTP</title>
+     <!-- Link para o CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles1.css">
+    <link rel="shortcut icon" href="log.jpeg" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="img/log.jpeg" alt="Inova STP" width="200">
+        </div>
+        <div class="menu-toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <nav class="navigation">
+            <ul>
+                
+                <li class="list active">
+                    <a href="index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#servicos">
+                        <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                        <span class="title">Serviços</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#membros">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Membros</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#ajuda">
+                        <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                        <span class="title">Ajuda</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar serviços..." id="search">
+            <button onclick="buscar()">Buscar</button>
+        </div>
+        <button class="account-button" onclick="abrirModal()">Conta</button>  
+    </header>
+    <!-- Link para o JavaScript -->
+    <script src="script.js"></script>
+    <br>
+        <br>
+        <br>
+        <br>
+    <main>
+        <div>
+        <section id="hero">
+            <h1>Programação</h1>
+            <p>Descubra o mundo da programação e como ela pode transformar ideias em realidade.</p>
+        </section>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="linguagens">
+            <h2>Linguagens de Programação</h2>
+            <div class="linguagem">
+                <img src="python.png" alt="Python" class="linguagem-img">
+                <h3>Python</h3>
+                <p>Python é uma linguagem de programação de alto nível, conhecida por sua simplicidade e legibilidade. É amplamente utilizada em ciência de dados, desenvolvimento web e automação.</p>
+            </div>
+            <br>
+        <br>
+        <br>
+        <br>
+            <div class="linguagem">
+                <img src="javascript.png" alt="JavaScript" class="linguagem-img">
+                <h3>JavaScript</h3>
+                <p>JavaScript é a linguagem de programação da web. É usada para criar interatividade em páginas web e é uma parte essencial do desenvolvimento front-end.</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>    
+            <div class="linguagem">
+                <img src="java.png" alt="Java" class="linguagem-img">
+                <h3>Java</h3>
+                <p>Java é uma linguagem de programação orientada a objetos, amplamente utilizada em desenvolvimento de aplicativos empresariais, aplicativos móveis e sistemas embarcados.</p>
+            </div>
+            <br>
+        <br>
+        <br>
+        <br>
+            <div class="linguagem">
+                <img src="csharp.png" alt="C#" class="linguagem-img">
+                <h3>C#</h3>
+                <p>C# é uma linguagem de programação desenvolvida pela Microsoft, usada principalmente para desenvolvimento de aplicativos Windows e jogos com Unity.</p>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="beneficios">
+            <h2>Benefícios da Programação</h2>
+            <ul>
+                <li><strong>Resolução de Problemas:</strong> A programação ensina a pensar logicamente e a resolver problemas complexos.</li>
+                <li><strong>Oportunidades de Carreira:</strong> A demanda por programadores está em alta, oferecendo diversas oportunidades de emprego.</li>
+                <li><strong>Inovação:</strong> A programação permite criar novas soluções e produtos que podem impactar a sociedade.</li>
+                <li><strong>Flexibilidade:</strong> Programadores podem trabalhar em diversos setores, desde tecnologia até saúde e educação.</li>
+            </ul>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="projetos">
+            <h2>Projetos em Destaque</h2>
+            <div class="projeto">
+                <h3>Aplicativo de Gerenciamento de Tarefas</h3>
+                <p>Um aplicativo desenvolvido em JavaScript e Node.js que ajuda os usuários a gerenciar suas tarefas diárias.</p>
+            </div>
+            <div class="projeto">
+                <h3>Site de E-commerce</h3>
+                <p>Um site de e-commerce desenvolvido em Python e Django, permitindo que os usuários comprem produtos online.</p>
+            </div>
+            <div class="projeto">
+                <h3>Jogo Interativo</h3>
+                <p>Um jogo desenvolvido em C# usando Unity, que oferece uma experiência de jogo envolvente e divertida.</p>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form>
+                <label></label>
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>

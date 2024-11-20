@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0e0e0e;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    
+    qbackground-color: #1a1a1a;
+    background-image: url(/imag.png);
+    background-size: 100%;
+    background-position: center; /* Centraliza a imagem */
+    height: 20vh; /* Altura do cabeçalho */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    
+}
+
+
+/*contorno ao redor da imagem com animação*/
+.title img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px double  #00ffcc /*cor e espessura*/;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.title img:hover {
+    transform: scale(1.1);
+  }
+
+.title {
+    font-size: 20px;
+    color:  #00ffcc;
+}
+
+.menu-toggle {
+     /* Oculta o botão de menu por padrão */
+    display: none;
+    cursor: pointer;
+    color:  #00ffcc;
+    font-size: 24px;
+}
+
+.navigation {
+    display: flex;
+}
+.navigation:hover{
+    width: none;
+    
+}
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation ul li {
+    margin: 0 15px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #00ffcc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.account-button {
+    background-color: #00ffcc;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+.serviços .container{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+.serviços .servico-item{
+    width: 400px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-align: center;
+}
+.serviços .servico-item:hover{
+    box-shadow: 0px 10px 67px 8px #00ffcc;
+    transform: scale(1.1);
+}
+.serviços .servico-item img{
+    width: 190PX;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    border-radius: 30px;
+}
+.serviços .servico-item .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+    color: #fff;
+}
+.serviços .servico-item .q{
+    color: #fff;
+
+}
+
+.ajuda img{
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    display: flex;
+    justify-self: center;
+} 
+
+
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .menu-toggle {
+        display: block; /* Exibe o botão de menu em telas menores */
+    }
+    .ajuda img{
+        align-content: center;
+    }
+    .navigation {
+        display: none; /* Oculta o menu por padrão em telas menores */
+        flex-direction: column; /* Alinha os itens verticalmente */
+        position: fixed; /* Posiciona o menu */
+        top: 105px; /* Abaixo do cabeçalho */
+        left: 0;
+        height: 50%;
+        width: 30%; /* Largura total */
+        background-color: #0e0e0e; /* Fundo do menu */
+        
+        z-index: 1000; /* Coloca o menu acima de outros elementos */
+    }
+
+    .navigation.active {
+        display: flex; /* Exibe o menu quando ativo */
+    }
+
+    .navigation ul {
+        flex-direction: column; /* Alinha os itens verticalmente */
+    }
+
+    .navigation ul li {
+        margin: 10px 0; /* Espaçamento entre os itens */
+    }
+    .serviços .container{
+        flex-direction: column;
+    }
+    .serviços .servico-item{
+        width: 100%;
+    }
+    .resultados .container{
+        flex-direction: column;
+    }
+}

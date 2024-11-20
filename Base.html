@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Base de Dados</title>
+            <!-- Link para o CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" href="log.jpeg" type="image/x-icon">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+<body>
+    <header>
+        <div class="title">
+            <img src="img/log.jpeg" alt="Inova STP" width="200">
+        </div>
+        <div class="menu-toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <nav class="navigation">
+            <ul>
+                
+                <li class="list active">
+                    <a href="index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#servicos">
+                        <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                        <span class="title">Serviços</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#membros">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Membros</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#ajuda">
+                        <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                        <span class="title">Ajuda</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar serviços..." id="search">
+            <button onclick="buscar()">Buscar</button>
+        </div>
+        <button class="account-button" onclick="abrirModal()">Conta</button>  
+    </header>
+    <br>
+    <br>
+    <script src="script.js"></script>
+    <main>
+        <section id="hero">
+            <h1>Base de Dados</h1>
+            <p>Armazene e gerencie seus dados de forma eficiente e segura com nossas soluções de base de dados.</p>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="tipos">
+            <h2>Tipos de Bases de Dados</h2>
+            <div class="tipo">
+                <img src="relacional.png" alt="Relacional" class="tipo-img">
+                <h3>Relacional</h3>
+                <p>Uma base de dados relacional organiza os dados em tabelas com relacionamentos entre elas.</p>
+            </div>
+            <div class="tipo">
+                <img src="no_sql.png" alt="NoSQL" class="tipo-img">
+                <h3>NoSQL</h3>
+                <p>Uma base de dados NoSQL é projetada para lidar com grandes volumes de dados não estruturados ou semi-estruturados.</p>
+            </div>
+            <div class="tipo">
+                <img src="cloud.png" alt="Cloud" class="tipo-img">
+                <h3>Cloud</h3>
+                <p>Uma base de dados em nuvem é armazenada e gerenciada em servidores remotos, acessíveis via internet.</p>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="beneficios">
+            <h2>Benefícios de uma Base de Dados</h2>
+            <ul>
+                <li><strong>Armazenamento Eficiente:</strong> Armazene grandes volumes de dados de forma eficiente e segura.</li>
+                <li><strong>Recuperação Rápida:</strong> Acesse seus dados rapidamente e com facilidade.</li>
+                <li><strong>Segurança:</strong> Proteja seus dados contra perdas ou acessos não autorizados.</li>
+                <li><strong>Escalabilidade:</strong> Aumente ou diminua a capacidade de sua base de dados de acordo com as necessidades.</li>
+            </ul>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="projetos">
+            <h2>Projetos em Destaque</h2>
+            <div class="projeto">
+                <h3>Sistema de Gerenciamento de Estoque</h3>
+                <p>Um sistema de gerenciamento de estoque desenvolvido em uma base de dados relacional, permitindo que as empresas gerenciem seus estoques de forma eficiente.</p>
+            </div>
+            <div class="projeto">
+                <h3>Plataforma de Análise de Dados</h3>
+                <p>Uma plataforma de análise de dados desenvolvida em uma base de dados NoSQL, permitindo que as empresas analisem grandes volumes de dados.</p>
+            </div>
+            <div class="projeto">
+                <h3>Sistema de Gerenciamento de Conteúdo</h3>
+                <p>Um sistema de gerenciamento de conteúdo desenvolvido em uma base de dados em nuvem, permitindo que as empresas gerenciem seu conteúdo de forma escalável e segura.</p>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+        </section>
+    </main>
+</body>
+</html>

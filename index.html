@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InovaSTP</title>
+     <!-- Link para o CSS -->
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/log.jpeg" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="/log.jpeg" alt="Inova STP" width="200">
+        </div>
+        <div class="menu-toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <nav class="navigation">
+            <ul>
+                
+                <li class="list active">
+                    <a href="index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#servicos">
+                        <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                        <span class="title">Serviços</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#membros">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Membros</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#ajuda">
+                        <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                        <span class="title">Ajuda</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar serviços..." id="search">
+
+            <button onclick="buscar()">Buscar</button>
+        </div>
+        <button class="account-button" onclick="abrirModal()">Conta</button>  
+    </header>
+    <!-- Link para o JavaScript -->
+    <script src="/script.js"></script>
+    <main>
+        <section id="home">
+            <hr>
+            <br>
+            <h2 id="">Bem-vindo ao InavaSTP</h2>
+            <br>
+            <p>A InavaSTP é uma plataforma dedicada a inovação e serviços tecnológicos.</p>
+        </section>  
+    <section class="serviços" id="serviços">
+        <br>
+        <h2>Nossos Serviços</h2>
+        <div class="container">
+
+            <div class="servico-item" onclick="exibirDetalhes('Programação')">
+                <a href="/Prog.html">
+                    <h3 class="titulo">Programação</h3>
+                    <p class="q">Desenvolvimento de software em diversas linguagens.</p>
+                    <img class="imagem" src="/prog.png" alt="Programação">
+                </a>
+            </div>
+
+            <div class="servico-item" onclick="exibirDetalhes('Desenvolvedor Web')" >
+                <a href="/Web.html">
+                    <h3 class="titulo">Desenvolvedor Web</h3>
+                    <p class="q">Criação e manutenção de sites e aplicações web.</p>
+                    <img class="imagem" src="/web.png" alt="Desenvolvedor Web">
+                </a>
+            
+            </div>
+            <div class="servico-item" onclick="exibirDetalhes('Base de Dados')">
+                <a href="/Base.html">
+                    <h3 class="titulo">Base de Dados</h3>
+                    <p class="q">Gestão e desenvolvimento de bases de dados.</p>
+                    <img class="imagem" src="/dados.png" alt="Base de Dados">
+                </a>
+            </div>
+            <div class="servico-item" onclick="exibirDetalhes('Cyber Segurança')">
+                <a href="/Cyber.html">
+                    <h3 class="titulo">Cyber Segurança</h3>
+                    <p class="q">Proteção e segurança digital.</p>
+                    <img class="imagem" src="/cyber security.jpeg" alt="Cyber Segurança">
+                </a>
+            </div>
+            <div class="servico-item" onclick="exibirDetalhes('Rede de Computadores')">
+                <a href="/Rede.html">
+                    <h3 class="titulo">Rede de Computadores</h3>
+                    <p class="q">Serviços complletos de redes.</p>
+                    <img class="imagem" src="/redes.jpg" alt="Rede de Computadores">
+                </a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <div>
+       <div>
+            <hr>
+            <div class="ajuda">
+               <a href="/index.html">
+                    <img class="im" src="/log.jpeg" alt="Inova STP" width="100">
+               </a> 
+               <button>
+
+               </button>
+            </div>
+            <section id="ajuda">
+                <h2>Ajuda</h2>
+                <p>Se você tiver alguma dúvida, entre em contato conosco através do nosso e-mail: suporte@inavastp.com</p>
+            </section>
+            <hr>
+        </div>
+        
+        <br>
+        <br>
+        <div>
+            <section id="membros">
+                <h2>Área dos Membros</h2>
+                <p>Acesse sua conta para ver os serviços contratados e gerenciar suas informações.</p>
+            </section>
+        </div>
+    </div>
+    </main>
+        <br>
+    <footer>
+        <div>
+            <p>&copy; 2023 InavaSTP. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
